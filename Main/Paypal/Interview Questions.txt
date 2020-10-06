@@ -1,0 +1,228 @@
+Interview Questions
+
+Platform - hackerrank
+No. of Questions - 3 Approx.
+
+
+Basics of trees, linked list, graphs
+
+1. Dp
+2. Graph
+3. Queue
+
+4. Implement LRU/LFU cache
+
+5. Find the longest substring that does not contain any  duplicate characters - Used hashmaps **
+
+6. concatenate multiple strings (he wanted the term StringBuilder!)
+
+7. Concatenate multiple strings in Java?  
+
+8. Print all the possible combinations of a string?  
+
+9. Find all the paths from a give node given root node, a node and the distance?
+
+10. Find next permutation of a string
+
+11. 2 question were asked, one on array other on graphs -- arrays , good array , gcd , gcd > 1  
+
+12. 1st round -1 question was mathematical coding question  another question was on graphs. 
+
+2nd round -asked about linked list and some other algorithm questions
+
+Graph and DP questions. 
+
+13. Find pairs of colours in given array - [1,2,1,3,4,2,1]
+
+Ds Algo, maze, array problems
+
+
+14. bit manipulation  
+
+15. heaps with bfs  
+
+16. dynamic programming with graphs
+
+17. Divide array into equal sum sub arrays.  
+
+18. Reverse a linked list
+
+19. String palindrome
+
+20. Basic algorithms to advance graph theories and number theory. Prepare number theory and solve grid questions.
+
+21. decent to hard Algorithmic questions.
+
+22. Count the total number of distinct substrings of a string  
+
+23. Find final discounted price. example, given input = 2 3 1 2 4 2 output = 1 + 2 + 1 + 0 + 2 + 2 = 8 ... Starting from the left shopkeeper rings up each item at its full price less the price of the first lower or equal priced item to its right. Item priced at 1 units will be sold at full price.  
+
+24. How to check the given number is power of two?  
+
+How to find the train seat positions like as middle, aisle or window and also find the opposite seat no?  
+
+25. Given an array of characters, find the duplicate characters.
+26. Find maximum sum of non adjacent elements of the array 
+
+27. Least Common Ancestor in Binary Tree not BST ?  
+28. Find one missing number in array ?  
+29. Find two missing number in array ?  
+30. Finding how many sentences can be formed using common anagrams
+31. A typical binary tree question
+
+-------
+
+Interview Questions
+
+In 1st technical interview 2 questions were asked. First one was an easy dp question. The 2nd question was that you have been given a family tree. For each node, name and its gender would be given. The nodes at same level denote brother/ sister depending on its gender which would be given. The first part of the question is to answer ancestor descendent relationship query in O(1). In 2nd part you have been given a query denoting name and its relationship. For e.g. Rahul and brother. Now, you have to print all the brothers of Rahul. The relationship can be anything like brother, sister, father, mother, grandfather, grand grandfather etc. You have do it in the most optimal way. You have to write the whole code on paper.• In 2nd technical interview, 1 question was asked on dsa. The question was that you have to use an appropriate data structure to check any error in an html document. The error can be anything like spelling mistake, not writing closing tag, writing closing tag before opening tag, wrong ordering of tags etc. (can be anything). The interviewer clearly explains how an html document is written. You have to identify possible errors yourself and what errors are you covering in your solution. You have to give the most optimal solution. Firstly, I proposed a solution using 2 data structures. Then, I was told to optimize it more and use only 1 data structure that cover all the test cases. You have to write the whole code on paper.
+Then, the interviewer asked me about my strong subject other than dsa and I chose operating system. Then, she asked a question on os. It was a simple question. You have been given 2 cpu’s, different processes, their arrival time, burst time etc. You have to schedule the processes by using any scheduling algorithm. You have to decide which scheduling algorithm would be best for that case, schedule them and justify why you chose that scheduling algorithm and not others.
+
+-------
+32. Find the number of islands in a 2D matrix of 1s and 0s, where 1 represents land and 0 represents water.
+-------
+Some problems on Arrays, LinkedList
+
+Trees, Arrays.  
+-------
+Round 2 - DS/Algorithm problem related to the tree (I don't really recall the exact problem)  
+------
+
+33. Find the number of ways you can reach a position i,j in a matrix where you can move only left or down
+
+------
+Describe how you can improve the deployed servers to handle a sudden spike in request 
+--------
+34. Print unique words sorted in order of length from a file.
+35. Rotate an array
+
+----------
+difficult category question was related to dictionary problem concept and medium category was related to counting number of 2's in a given range of series of number from lower to upper limit and easy category was related to mirrored palindrome question.  
+
+-------
+The process went for 1 day .starting with pre placement talk and then a hacker rank contest containing one code and 10 bits from data structures.the qns we're pretty avg.
+
+----
+Coin exchange problem, no of ways to make a change of a given number  
+
+---
+
+nterview Questions
+
+Implementation of Topological sorting  
+--------
+
+Interview Questions
+
+A code involving array rotation.  
+
+
+Interview Questions
+
+Print the elements of the binary tree in a spiral fashion  
+
+------
+
+Given an array delete elements such that the deleted element*no of repetitions will be added to score and the (number-1) and (number+1) will be deleted. Find the maximum score.
+EX: 2 3 2 2 4 1 5 4
+
+selecting 4 deletes 5 and 3 getting score as 4*2=8
+selecting 2 deletes 1 getting score as 2*3 = 6
+so 6+8=14 is the maximum score possible.  
+-----
+
+Linked lists, Queue, Trees
+And some problems to solve.  
+
+
+----------
+1. Create your own linklist and write a function to find the middle element of the list
+2. consider an array which contains alphabets from a to z arr['a','b','c',..'z']. Write a program that uses two threads to print this using both.
+3. cosider an array of integers, write a program that shifts all the zero(0) in this arry to shift to the right. Please note you should not use any extra array or collections.
+
+Then was selected and attended the second round.
+
+I was asked that how to implement "People You May Know" concept of facebook. Write a java program for it. I explained the algo and dynamics beside it but told me to write the code which was rubbishh.
+
+Second question was on patterns (.) and (*), Suppose you have a complex pattern like a.b.*cdd*e.ff*. and i give u a string, you need to return true or false if it maches.
+
+(.) means any - a.b means a(any value)b for eg: a5b
+
+(*) means repeated. - a*b means a (then n number of a ) then b , eg: aaab will be true but ab will be false.
+
+write a code for the same which takes two input one regex pattern and one sample string and return boolean value whether it adheres to regex or not
+
+
+-------
+1. Create your own linklist and write a function to find the middle element of the list
+2. consider an array which contains alphabets from a to z arr['a','b','c',..'z']. Write a program that uses two threads to print this using both.
+3. cosider an array of integers, write a program that shifts all the zero(0) in this arry to shift to the right. Please note you should not use any extra array… 
+
+
+Interview Questions
+
+given a string write your code such that you can compute the expression the string consists of nos +,-,%,()  
+
+
+Interview Questions
+
+Elevator Algorithm in which there are many floors and many lifts used to work.
+give a very optimal solution for so that waiting time will be less as much as possible.
+which design pattern will be used in this case.
+
+
+Interview Questions
+
+how would you find the sum of all elements of a tree?  
+
+
+nterview Questions
+
+Given a binary string find all the substrings that starts with 1 and ends with 0. Print without duplicate substrings.  
+Answer Question
+What happens if we assign int to short without casting it explicitly  
+Answer Question
+What happens if we pass print(null) when class is having two methods one takes object Integer and other take object String  
+Answer Question
+What is Error in Java and examples of it.  
+Answer Question
+Internal details of HashSet, LinkedHashSet, TreeSet and HashMap 
+
+Interview Questions
+
+Given number pattern. If we repeat the number one by one in each phase when the same number series will get?
+Example:
+2,3,6,7,9
+First repetitive 3,6,7,9,2( moved 2 here)
+Next repetitive 6,7,9,2,3(moved 3 here)
+And so on ...
+When we will get again 2,3,6,7,9 .
+Same case with millions of numbers.
+Write an algorithm for it  
+
+
+
+
+Interview Questions
+
+Balance Parenthesis [ They expect to apply DS in solving the same]
+Reverse String on frequency  
+
+
+nterview Questions
+
+1 Find out number of full nodes of a binary tree.
+2. Word frequency problem without collection
+3. A simple produce-consumer problem  
+
+
+Coding ques was t split the given amount into the minimum number of coins in the given denominations; the case did not require dynamic programming
+
+INTERVIEW
+
+
+nterview Questions
+
+Max Depth of a binary tree.
+write a function to calculate nCr.
+Implement a stack using arrays covering all the corner cases.
+Knapsack problem.  
