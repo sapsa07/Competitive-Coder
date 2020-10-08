@@ -124,4 +124,105 @@ Sets and frozen sets support the following operators:
 
 1. **<u>Anagram</u>**  To check whether two strings are anagrams or not. The strings are assumed to contain only *lower case letters*. The strings are anagrams of each other if the letters of one string can be rearranged to form the other string. So, in anagram strings, all characters occur the same number of times. For example, "ABC" and "CAB" are anagrams, as every character 'A,' 'B,' and 'C' occur the same number of times (one time here) in both the strings.
 
-2. 
+2. ##### Python: Find duplicates in a list with frequency count & index positions
+
+   ##### Step 1: Get duplicate elements in a list with a frequency count
+
+   Suppose we have a list of strings
+
+   We have created a function that accepts a list and returns a dictionary of duplicate elements in that list along with their frequency count .Let’s call this function to find out the duplicate elements in list with their frequency.
+
+   **What this function is doing?**
+
+   When called, this function creates a new dictionary. Then iterates over all the elements in the given list one by one. For each elements it checks if the element exists in the dictionary keys or not,
+
+   - If element does not exist in dictionary keys, then it adds the element as key in the dictionary with value as 1.
+   - If the element exists in dictionary keys, then increments the value of that key by 1.
+
+   Once the iteration of list elements ends, in this dictionary we have the frequency count of each element in the list. But as we are interested in duplicates only i.e. elements with frequency count more than 1. So, it removes the elements from this dictionary whose value is greater than 1. In the end, it returns a dictionary containing duplicate elements as keys and their frequency count as value.
+
+   We can achieve the same using collections.Counter() too,
+
+   ##### Use collections.Counter() Find duplicates in a list with frequency count
+
+   class collections.Counter
+
+   We can create an object of Counter class, using an iterable or any dict like mapping. This Counter object keeps the count of each element in iterable. Let’s use this Counter object to find duplicates in a list and their count.
+
+   Now we know the frequency count of each duplicate element in the list. But what if we want to know the index position of these duplicate elements in the list? Let’s see how to do that,
+
+   ##### Step 2: Get indices of each duplicate element in a list along with frequency count
+
+   Now we want to know indices of each duplicate element in list and also their frequency count. Something like this,
+
+   So, to achieve that we have created a function,
+
+   This function accepts a list of items and then iterates over the items in the list one by one to build a dictionary. In this dictionary, the key will be the element but value will be a list of,
+
+   - Frequency Count
+   - List of index positions of elements similar to the given element.
+
+   Let’s call this function to find out the duplicate elements in a list, their index positions, and their frequency.
+
+   **What this function is doing?**
+
+   When we call this function with a list argument, then this function does following steps,
+
+   - First of all, it creates a new dictionary.
+   - Then iterates over all the elements in list one by one and keeps the track of index positions.
+   - Then for each element, it checks if the element exists in the dictionary keys or not,
+     - If element does not exist in dictionary keys then it adds a new key-value pair in dictionary, where the key is the element and value is a list object of 2 items i.e.
+       - Frequency count 1
+       - List with current index position
+     - If the element exists in dictionary keys then it increments the frequency count in the value field and adds the index position in the index list.
+   - Once the iteration of list elements finishes, in this dictionary, we have the frequency count of each element in the list, along with index positions.
+   - But as we are interested in duplicates only i.e. elements with frequency count more than 1. So, it removes the elements from this dictionary whose value is greater than 1.
+   - In the end, it returns a dictionary containing duplicate elements as keys, whereas in value field their frequency count and index positions of duplicate entries.
+   
+3. ##### Accessing characters by index in string
+
+   In Python indexing of strings starts from 0 till n-1, where n is the size of string. So characters in string of size n, can be accessed from 0 to n-1.
+
+   Suppose we have a string i.e.
+
+   sampleStr = "Hello, this is a sample string"
+
+   Let’s access character at 5th index i.e.
+
+   sampleStr[5]
+
+   We can access and use the character i.e.
+
+   **# Access character at index 5** 
+
+   print( "Character at index 5 is : " , sampleStr[5] )
+
+
+
+## Accessing string elements by negative index
+
+We can also access the character in string using negative indexing i.e.
+
+- **string[-1]** will return the last character of string
+- **string[-2]** returns the second last character of string
+- If string size is n then **string[-n]** will return the first character of string
+
+
+
+For Example :
+
+sampleStr = "Hello, this is a sample string"
+
+ print( "Last character in string : " , sampleStr[-1] )
+
+print( "Second Last character in string : " , sampleStr[-2] )
+
+print( "First character in string : " , sampleStr[ -len(sampleStr) ] )
+
+Output:
+
+Last character in string : g 
+
+Second Last character in string : n
+
+First character in string : H
